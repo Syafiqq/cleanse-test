@@ -20,6 +20,32 @@ struct AppComponent: Cleanse.RootComponent {
                 .to {
                     DummyObject(x: 5)
                 }
+
+        // Step 9: We Register the repository A here, it will looks like the Dummy Object
+        binder.bind(RepositoryA.self)
+                .to {
+                    RepositoryA(value: (0...9).randomElement()!)
+                }
+
+        // Step 10: We Register the repository A here, it will looks like the Dummy Object
+        // The differences here we marked them as shared in scope, so you will only expect once object alive at a time
+        // The result value will be the same whenever you request this object from the graph
+        binder.bind(RepositoryB.self)
+                .sharedInScope()
+                .to {
+                    RepositoryB(value: (0...9).randomElement()!)
+                }
+
+        // Step 11: If we do this, we exepect the RepoA and RepoB dependency is coming from the DI Graph Itself,
+        // We don't care about the dependency, it will be handled by the graph
+        binder.bind(RepositoryC.self)
+                .to(factory: RepositoryC.init)
+
+        // Step 12: If we do this, the Repository B, will be requested from the graph, but the RepositoryA will be requested from the graph itself
+        binder.bind(RepositoryD.self)
+                .to {
+                    RepositoryD(repoA: $0, repoB: RepositoryB(value: (0...9).randomElement()!))
+                }
     }
 
     static func configureRoot(
