@@ -58,6 +58,10 @@ struct AppComponent: Cleanse.RootComponent {
         // Step 16: Register the injector resolver here
         binder.bind(InjectorResolver.self)
                 .to(factory: MainInjectorResolver.init)
+
+        // Step 17-1: Register ViewController propertyInjector binder to graph
+        binder.bindPropertyInjectionOf(ViewController.self)
+                .to(injector: ViewController.injectProperties)
     }
 
     static func configureRoot(

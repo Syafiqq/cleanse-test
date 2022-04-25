@@ -5,4 +5,6 @@
 import Foundation
 
 protocol InjectorResolver: AnyObject {
+    // Step 17-2: Register ViewController propertyInjector
+    func inject(_ viewController: ViewController)
 }
