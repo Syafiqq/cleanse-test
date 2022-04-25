@@ -20,6 +20,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
+        // Step 18: Call this to make Step 15 to be called
+        (UIApplication.shared.delegate as? AppDelegate)?.injectorResolver?.inject(self)
     }
 
     // Step 15: Inorder to create a property injector, first we need a place to receive the data from the dependency graph
