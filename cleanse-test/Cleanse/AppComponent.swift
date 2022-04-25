@@ -6,13 +6,8 @@
 import Foundation
 import Cleanse
 
-struct AppComponent: Cleanse.RootComponent {
-    typealias Root = PropertyInjector<AppDelegate>
-    typealias Scope = Singleton
-
+struct RepositoryModule: Module {
     static func configure(binder: SingletonScope) {
-        // Step 1: Here you will begin to create a dependency graph
-
         // Step 5: Here we register Dummy object to the dependency graph
         // So every dependant that register Dummy Object like we have in AppDelegate.swift#injectProperties(object: DummyObject)
         // The object will be automatically created based on this registration, this file line 21
@@ -46,6 +41,19 @@ struct AppComponent: Cleanse.RootComponent {
                 .to {
                     RepositoryD(repoA: $0, repoB: RepositoryB(value: (0...9).randomElement()!))
                 }
+    }
+}
+
+
+struct AppComponent: Cleanse.RootComponent {
+    typealias Root = PropertyInjector<AppDelegate>
+    typealias Scope = Singleton
+
+    static func configure(binder: SingletonScope) {
+        // Step 1: Here you will begin to create a dependency graph
+
+        // Step 13: Grouping the similar dependency and link the dependency here
+        binder.include(module: RepositoryModule.self)
     }
 
     static func configureRoot(
