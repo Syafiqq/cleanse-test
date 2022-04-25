@@ -54,6 +54,10 @@ struct AppComponent: Cleanse.RootComponent {
 
         // Step 13: Grouping the similar dependency and link the dependency here
         binder.include(module: RepositoryModule.self)
+
+        // Step 16: Register the injector resolver here
+        binder.bind(InjectorResolver.self)
+                .to(factory: MainInjectorResolver.init)
     }
 
     static func configureRoot(

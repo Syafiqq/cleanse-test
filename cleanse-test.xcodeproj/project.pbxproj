@@ -18,6 +18,8 @@
 		65B8C6877BC926A39557E20F /* RepositoryC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CDC355E4BF11A89295E1 /* RepositoryC.swift */; };
 		65B8C6F426857902631EF3A1 /* SingletonScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C61D3CEADEA1E49270F3 /* SingletonScope.swift */; };
 		65B8C7032705EFB8829599C6 /* RepositoryD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CEF1CF44CCADB4D340DA /* RepositoryD.swift */; };
+		65B8CC30FC152ABC04450C33 /* InjectorResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C3DC3FBF6C6AAFD365B6 /* InjectorResolver.swift */; };
+		65B8CD6CC3ADE3B667EBAAF5 /* MainInjectorResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C68BD1B845D16996ECDF /* MainInjectorResolver.swift */; };
 		65B8CFB66EE898D7310BFC0E /* RepositoryA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C5FACBBCA841F08AEF4E /* RepositoryA.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,9 +31,11 @@
 		599FB5612816616300DAC2D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		599FB5642816616300DAC2D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		599FB5662816616300DAC2D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65B8C3DC3FBF6C6AAFD365B6 /* InjectorResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectorResolver.swift; sourceTree = "<group>"; };
 		65B8C5076F2803A9389F233D /* AppComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
 		65B8C5FACBBCA841F08AEF4E /* RepositoryA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryA.swift; sourceTree = "<group>"; };
 		65B8C61D3CEADEA1E49270F3 /* SingletonScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonScope.swift; sourceTree = "<group>"; };
+		65B8C68BD1B845D16996ECDF /* MainInjectorResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInjectorResolver.swift; sourceTree = "<group>"; };
 		65B8C8C81E3F7270F07B6EA0 /* RepositoryB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryB.swift; sourceTree = "<group>"; };
 		65B8CDC355E4BF11A89295E1 /* RepositoryC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryC.swift; sourceTree = "<group>"; };
 		65B8CEF1CF44CCADB4D340DA /* RepositoryD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryD.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 			children = (
 				65B8C61D3CEADEA1E49270F3 /* SingletonScope.swift */,
 				65B8C5076F2803A9389F233D /* AppComponent.swift */,
+				65B8C3DC3FBF6C6AAFD365B6 /* InjectorResolver.swift */,
+				65B8C68BD1B845D16996ECDF /* MainInjectorResolver.swift */,
 			);
 			path = Cleanse;
 			sourceTree = "<group>";
@@ -185,6 +191,8 @@
 				65B8C6457D6640B2F506FF83 /* RepositoryB.swift in Sources */,
 				65B8C6877BC926A39557E20F /* RepositoryC.swift in Sources */,
 				65B8C7032705EFB8829599C6 /* RepositoryD.swift in Sources */,
+				65B8CC30FC152ABC04450C33 /* InjectorResolver.swift in Sources */,
+				65B8CD6CC3ADE3B667EBAAF5 /* MainInjectorResolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
