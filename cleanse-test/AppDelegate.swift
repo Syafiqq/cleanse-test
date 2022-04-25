@@ -6,15 +6,23 @@
 //
 
 import UIKit
+import Cleanse
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var propertyInjector: PropertyInjector<AppDelegate>?
     var window: UIWindow?
 
     func application(
             _ application: UIApplication,
             didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+        // Part 7: Firstly we need to create a dependency graph. use this command to built it.
+        propertyInjector = try! ComponentFactory.of(AppComponent.self).build(())
+
+        // Part 8: In order to #injectProperties work, call inject properties to ourself (AppDelegate), so you can use this function
+        propertyInjector?.injectProperties(into: self)
+
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
         window?.makeKeyAndVisible()
