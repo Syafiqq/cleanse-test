@@ -55,3 +55,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+extension AppDelegate {
+    // Since we don't control creation of our AppDelegate, we have to use "property injection" to populate
+    // our required properties
+    // Here we need at least one object to be created
+    func injectProperties(object: DummyObject) {
+        // Step 6: Here we receive object from the dependency grapth
+        dump(object)
+    }
+}
