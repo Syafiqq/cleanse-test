@@ -62,8 +62,16 @@
 				599FB5612816616300DAC2D1 /* Assets.xcassets */,
 				599FB5632816616300DAC2D1 /* LaunchScreen.storyboard */,
 				599FB5662816616300DAC2D1 /* Info.plist */,
+				65B8C773F4C9EF74447216D2 /* Cleanse */,
 			);
 			path = "cleanse-test";
+			sourceTree = "<group>";
+		};
+		65B8C773F4C9EF74447216D2 /* Cleanse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cleanse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
