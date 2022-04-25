@@ -22,6 +22,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    // Step 15: Inorder to create a property injector, first we need a place to receive the data from the dependency graph
+    func injectProperties(repoA: RepositoryA, repoB: RepositoryB, repoC: RepositoryC, repoD: RepositoryD) {
+        self.repoA = repoA
+        self.repoB = repoB
+        self.repoC = repoC
+        self.repoD = repoD
+
+        dump("ViewController - injectProperties")
+        dump(repoA)
+        dump(repoB)
+        dump(repoC)
+        dump(repoD)
+    }
 
 }
 
