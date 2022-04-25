@@ -13,6 +13,7 @@
 		599FB5602816616300DAC2D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599FB55E2816616300DAC2D1 /* Main.storyboard */; };
 		599FB5622816616300DAC2D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 599FB5612816616300DAC2D1 /* Assets.xcassets */; };
 		599FB5652816616300DAC2D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599FB5632816616300DAC2D1 /* LaunchScreen.storyboard */; };
+		599FB56E281664CA00DAC2D1 /* Cleanse in Frameworks */ = {isa = PBXBuildFile; productRef = 599FB56D281664CA00DAC2D1 /* Cleanse */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				599FB56E281664CA00DAC2D1 /* Cleanse in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "cleanse-test";
+			packageProductDependencies = (
+				599FB56D281664CA00DAC2D1 /* Cleanse */,
+			);
 			productName = "cleanse-test";
 			productReference = 599FB5552816616300DAC2D1 /* cleanse-test.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 599FB54C2816616300DAC2D1;
+			packageReferences = (
+				599FB56C281664CA00DAC2D1 /* XCRemoteSwiftPackageReference "Cleanse" */,
+			);
 			productRefGroup = 599FB5562816616300DAC2D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		599FB56C281664CA00DAC2D1 /* XCRemoteSwiftPackageReference "Cleanse" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/square/Cleanse";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		599FB56D281664CA00DAC2D1 /* Cleanse */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 599FB56C281664CA00DAC2D1 /* XCRemoteSwiftPackageReference "Cleanse" */;
+			productName = Cleanse;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 599FB54D2816616300DAC2D1 /* Project object */;
 }

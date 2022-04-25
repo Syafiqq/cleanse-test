@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "cleanse",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/square/Cleanse",
+      "state" : {
+        "revision" : "c854787f83d99527587b5387f04ccd0030e6133a",
+        "version" : "4.2.6"
+      }
+    }
+  ],
+  "version" : 2
+}
