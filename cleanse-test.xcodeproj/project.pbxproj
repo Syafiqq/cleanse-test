@@ -13,6 +13,7 @@
 		599FB5622816616300DAC2D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 599FB5612816616300DAC2D1 /* Assets.xcassets */; };
 		599FB5652816616300DAC2D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599FB5632816616300DAC2D1 /* LaunchScreen.storyboard */; };
 		599FB56E281664CA00DAC2D1 /* Cleanse in Frameworks */ = {isa = PBXBuildFile; productRef = 599FB56D281664CA00DAC2D1 /* Cleanse */; };
+		65B8C46CF67D64A2923354EE /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C5076F2803A9389F233D /* AppComponent.swift */; };
 		65B8C6F426857902631EF3A1 /* SingletonScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C61D3CEADEA1E49270F3 /* SingletonScope.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		599FB5612816616300DAC2D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		599FB5642816616300DAC2D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		599FB5662816616300DAC2D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65B8C5076F2803A9389F233D /* AppComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
 		65B8C61D3CEADEA1E49270F3 /* SingletonScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonScope.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				65B8C61D3CEADEA1E49270F3 /* SingletonScope.swift */,
+				65B8C5076F2803A9389F233D /* AppComponent.swift */,
 			);
 			path = Cleanse;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				599FB55D2816616300DAC2D1 /* ViewController.swift in Sources */,
 				599FB5592816616300DAC2D1 /* AppDelegate.swift in Sources */,
 				65B8C6F426857902631EF3A1 /* SingletonScope.swift in Sources */,
+				65B8C46CF67D64A2923354EE /* AppComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
